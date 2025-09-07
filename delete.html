@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-box">
+  <h2>Delete User</h2>
+  <form method="POST">
+    <label>Username:</label><br>
+    <input type="text" name="username" required><br><br>
+    <button type="submit">Delete</button>
+  </form>
+</div>
+{% endblock %}

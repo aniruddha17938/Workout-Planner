@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-box">
+  <h2>Design Workout</h2>
+  <form method="POST">
+    <label>Username:</label><br>
+    <input type="text" name="username" required><br>
+    <label>Muscle Group:</label><br>
+    <select name="muscle" required>
+      <option value="">--</option>
+      <option>Chest</option>
+      <option>Back</option>
+      <option>Arms</option>
+      <option>Legs</option>
+      <option>Shoulders</option>
+      <option>Core</option>
+    </select><br>
+    <label>Exercise:</label><br>
+    <input type="text" name="exercise" required><br>
+    <label>Reps:</label><br>
+    <input type="number" name="reps" required><br>
+    <label>Sets:</label><br>
+    <input type="number" name="sets" required><br>
+    <label>Notes:</label><br>
+    <input type="text" name="notes"><br><br>
+    <button type="submit">Save Workout</button>
+  </form>
+</div>
+{% endblock %}

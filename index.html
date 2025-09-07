@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Existing Users</h2>
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Age</th>
+    <th>Weight (kg)</th>
+    <th>Height (m)</th>
+    <th>BMI</th>
+  </tr>
+  {% for user in users %}
+  <tr>
+    <td>{{ user.username }}</td>
+    <td>{{ user.age }}</td>
+    <td>{{ user.weight }}</td>
+    <td>{{ user.height }}</td>
+    <td class="{{ user.css_class }}">
+      {{ user.bmi }} ({{ user.category }})
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
