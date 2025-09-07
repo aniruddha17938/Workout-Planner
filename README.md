@@ -1,2 +1,2 @@
-# Workout-Planner
-My most complex project yet
+# Workout Planner
+Flask-based workout tracker that allows user to design workouts and keep track of their fitness goals 
